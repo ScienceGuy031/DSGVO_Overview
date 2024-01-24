@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+p,
+a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+
+.pagetitle {
+  font-size: 2rem;
+  font-style: bold;
+  padding: 1rem;
+}
+
+.navlink-container {
+  display: flex;
+}
+
+.navlink {
+  display: block;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.navlink:last-of-type {
+  padding-right: 2rem;
+}
+
+.navlink:hover {
+  font-size: 1.7rem;
+  background: black;
+}
+
+.pagetitle:hover {
+  font-size: 2.1rem;
+  background: black;
+}
+
+#welcome {
+  background-image: url("https://images.pexels.com/photos/1743364/pexels-photo-1743364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  z-index: 2;
+  background-position: center;
+  background-size: cover;
+}
+
+#welcome h1 {
+  text-align: center;
+  font-size: 8rem;
+  font-weight: bold;
+  color: rgba(163, 125, 12, 0.937);
+  padding-top: 10%;
+  padding-right: 20%;
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+  transform-style: inherit;
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.title h1 {
+  color: #333;
+}
+
+/* 
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(0.25px) scale(0.75) translateX(-94%) translateY(-100%)
+    rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, 0.7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+*/
+
+#chapter1,
+#chapter2,
+#chapter3,
+#chapter4,
+#chapter5,
+#chapter8 {
+  z-index: 2;
+  background-position: center;
+  background-size: cover;
+}
+
+#chapter1 {
+  background-image: url("https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#chapter2 {
+  background-image: url("https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#chapter3 {
+  background-image: url("https://images.pexels.com/photos/5723263/pexels-photo-5723263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#chapter4 {
+  background-image: url("https://images.pexels.com/photos/5380637/pexels-photo-5380637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#chapter5 {
+  background-image: url("https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#chapter8 {
+  background-image: url("https://images.pexels.com/photos/6077189/pexels-photo-6077189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
