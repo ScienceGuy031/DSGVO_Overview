@@ -106,20 +106,30 @@ body {
   margin-right: 0;
 }
 
-.slide, .slide:before {
-  background: 50% 50% / cover;  
+.slide,
+.slide:before {
+  background: 50% 50% / cover;
 }
 
 .title {
   width: 50%;
   padding: 5%;
   border-radius: 5px;
-  background: rgba(240,230,220, .7);
+  background: rgba(240, 230, 220, .7);
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
 .title h1 {
   color: #333;
+  font-size: 2rem;
+}
+
+.title h1:nth-of-type(2) {
+  padding-top: 2rem;
+}
+
+.title h2 {
+  padding: 1rem;
 }
 
 /* 
