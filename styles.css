@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   position: fixed;
   width: 100vw;
-  z-index: 100;
+  z-index: 1;
 }
 
 .pagetitle {
@@ -63,7 +63,6 @@ body {
 
 #welcome {
   background-image: url("https://images.pexels.com/photos/1743364/pexels-photo-1743364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  z-index: 2;
   background-position: center;
   background-size: cover;
 }
@@ -145,7 +144,6 @@ img {
 #chapter4,
 #chapter5,
 #chapter8 {
-  z-index: 2;
   background-position: center;
   background-size: cover;
 }
