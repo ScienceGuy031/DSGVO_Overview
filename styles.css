@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   position: fixed;
   width: 100vw;
-  z-index: 1;
+  z-index: 5;
 }
 
 .pagetitle {
@@ -62,28 +62,35 @@ body {
 }
 
 #welcome {
-  background-image: url("https://images.pexels.com/photos/1743364/pexels-photo-1743364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("flag-eu.svg");
   background-position: center;
+  top: 2rem;
   background-size: cover;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  vertical-align: center;
+  height: 100vh;
 }
 
 #welcome h1 {
   text-align: center;
   font-size: 8rem;
   font-weight: bold;
-  color: rgba(163, 125, 12, 0.937);
-  padding-top: 10%;
-  padding-right: 20%;
+  color: gold;
+  margin: auto;
 }
 
-.slide:before {
-  content: "";
+.imgsource-background {
   position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  bottom: 2rem;
+  height: 1rem;
+  width: fit-content;
+  background: #737373;
+  vertical-align: center;
+  padding: 0.5rem;
+  border-top-right-radius: 10px;
 }
 
 .slide {
@@ -152,6 +159,7 @@ img {
 #chapter2,
 #chapter3,
 #chapter4,
+#chapter4_dsb,
 #chapter5,
 #chapter8 {
   background-position: center;
