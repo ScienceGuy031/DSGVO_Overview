@@ -13,7 +13,12 @@
       <a class="navlink" href="#chapter1">Kapitel 1</a>
       <a class="navlink" href="#chapter2">Kapitel 2</a>
       <a class="navlink" href="#chapter3">Kapitel 3</a>
-      <a class="navlink" id="navlink_chapter4" href="#chapter4">Kapitel 4</a>
+      <div class="dropdown">
+        <a class="navlink" id="navlink_chapter4" href="#chapter4">Kapitel 4</a>
+        <div class="dsb-navdrop">
+          <a id="navlink_dsb" href="#chapter4_dsb">Datenschutzbeauftragter</a>
+        </div>
+      </div>
       <a class="navlink" href="#chapter5">Kapitel 5</a>
       <a class="navlink" href="#chapter8">Kapitel 8</a>
     </div>
@@ -23,8 +28,10 @@
 <body>
   <section class="slide" id="welcome">
     <h1>DSGVO</h1>
-    <div class="imgsource-background">
-      <a target="_blank" href="https://www.freepik.com/free-vector/illustration-european-union-flag_2922296.htm#query=Europe&position=8&from_view=search&track=sph&uuid=7ac46310-532f-4c24-87b4-8f99aeb148b1">Image by rawpixel.com</a> on Freepik
+    <div class="imgsource-background" id="welcome-background-src">
+      <a target="_blank"
+        href="https://www.freepik.com/free-vector/illustration-european-union-flag_2922296.htm#query=Europe&position=8&from_view=search&track=sph&uuid=7ac46310-532f-4c24-87b4-8f99aeb148b1">Image
+        by rawpixel.com</a> on Freepik
     </div>
   </section>
   <section class="slide" id="chapter1">
@@ -505,52 +512,56 @@
     </div>
   </section>
 
-    <section class="slide" id="chapter4_dsb">
-      <div class="title">
-        <h1>Datenschutzbeauftragter</h1>
-
-        <ul>
-          <h2>Artikel 37 - Benennung eines Datenschutzbeauftragten</h2>
-          <li>
-            Organisationen müssen in bestimmten Fällen einen Datenschutzbeauftragten ernennen, z. B. wenn ihre
-            Kerntätigkeit in der umfangreichen Verarbeitung von personenbezogenen Daten besteht. Der Verantwortliche oder
-            der Auftragsverarbeiter veröffentlicht die Kontaktdaten des Datenschutzbeauftragten und teilt diese Daten der
-            Aufsichtsbehörde mit.
-          </li>
-          <li>
-            Ein großes Krankenhaus, das regelmäßig Gesundheitsdaten von Patienten verarbeitet, muss gemäß Artikel 37 der
-            DSGVO einen Datenschutzbeauftragten benennen.
-          </li>
-        </ul>
-  
-        <ul>
-          <h2>Artikel 38 - Stellung des Datenschutzbeauftragten</h2>
-          <li>
-            Der Datenschutzbeauftragte agiert unabhängig und erhält keine Weisungen bezüglich der Ausübung seiner
-            Aufgaben. Er ist für die Überwachung der Einhaltung der DSGVO in der Organisation verantwortlich.
-          </li>
-          <li>
-            Der Datenschutzbeauftragte eines Unternehmens überwacht die Datenschutzpraktiken und -richtlinien, um
-            sicherzustellen, dass sie den Anforderungen der DSGVO entsprechen, ohne dabei direkten Anweisungen von
-            Führungskräften zu unterliegen. Der Datenschutzbeauftragte unterliegt einem besonderen Kündigungsschutz.
-          </li>
-        </ul>
-  
-        <ul>
-          <h2>Artikel 39 - Aufgaben des Datenschutzbeauftragten</h2>
-          <li>
-            Der Datenschutzbeauftragte überwacht die Einhaltung der Datenschutzrichtlinien, berät die Organisation zu
-            datenschutzrelevanten Fragen, bietet Schulungen für Mitarbeiter an und fungiert als Ansprechpartner für
-            Datenschutzfragen.
-          </li>
-          <li>
-            Ein Datenschutzbeauftragter führt interne Audits durch, um sicherzustellen, dass die Organisation die
-            Datenschutzbestimmungen einhält, und bietet Schulungen für Mitarbeiter an, um sie über den richtigen Umgang
-            mit personenbezogenen Daten zu informieren.
-          </li>
-        </ul>
+  <section class="slide" id="chapter4_dsb">
+    <div class="title">
+      <h1>Datenschutzbeauftragter</h1>
+      <div class="imgsource-background">
+        <a
+          href="https://de.freepik.com/vektoren-kostenlos/datenbericht-illustration-konzept_6195527.htm#query=Data&position=1&from_view=search&track=sph&uuid=d0327de6-496e-43e2-a5f4-049a13f53496">Bild
+          von storyset</a> auf Freepik
       </div>
-    </section>
+      <ul>
+        <h2>Artikel 37 - Benennung eines Datenschutzbeauftragten</h2>
+        <li>
+          Organisationen müssen in bestimmten Fällen einen Datenschutzbeauftragten ernennen, z. B. wenn ihre
+          Kerntätigkeit in der umfangreichen Verarbeitung von personenbezogenen Daten besteht. Der Verantwortliche oder
+          der Auftragsverarbeiter veröffentlicht die Kontaktdaten des Datenschutzbeauftragten und teilt diese Daten der
+          Aufsichtsbehörde mit.
+        </li>
+        <li>
+          Ein großes Krankenhaus, das regelmäßig Gesundheitsdaten von Patienten verarbeitet, muss gemäß Artikel 37 der
+          DSGVO einen Datenschutzbeauftragten benennen.
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Artikel 38 - Stellung des Datenschutzbeauftragten</h2>
+        <li>
+          Der Datenschutzbeauftragte agiert unabhängig und erhält keine Weisungen bezüglich der Ausübung seiner
+          Aufgaben. Er ist für die Überwachung der Einhaltung der DSGVO in der Organisation verantwortlich.
+        </li>
+        <li>
+          Der Datenschutzbeauftragte eines Unternehmens überwacht die Datenschutzpraktiken und -richtlinien, um
+          sicherzustellen, dass sie den Anforderungen der DSGVO entsprechen, ohne dabei direkten Anweisungen von
+          Führungskräften zu unterliegen. Der Datenschutzbeauftragte unterliegt einem besonderen Kündigungsschutz.
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Artikel 39 - Aufgaben des Datenschutzbeauftragten</h2>
+        <li>
+          Der Datenschutzbeauftragte überwacht die Einhaltung der Datenschutzrichtlinien, berät die Organisation zu
+          datenschutzrelevanten Fragen, bietet Schulungen für Mitarbeiter an und fungiert als Ansprechpartner für
+          Datenschutzfragen.
+        </li>
+        <li>
+          Ein Datenschutzbeauftragter führt interne Audits durch, um sicherzustellen, dass die Organisation die
+          Datenschutzbestimmungen einhält, und bietet Schulungen für Mitarbeiter an, um sie über den richtigen Umgang
+          mit personenbezogenen Daten zu informieren.
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <section class="slide" id="chapter5">
     <div class="title">

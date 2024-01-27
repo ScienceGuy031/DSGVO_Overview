@@ -61,6 +61,39 @@ body {
   background: black;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.dsb-navdrop {
+  /*display: none;*/
+  position: absolute;
+  z-index: 5;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 15px 15px;
+}
+
+#navlink_dsb {
+  display: none;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+#navlink_dsb:hover {
+  background: black;
+  border-radius: 0 0 15px 15px;
+}
+
+.dropdown:hover #navlink_dsb {
+  display: block;
+}
+
 #welcome {
   background-image: url("flag-eu.svg");
   background-position: center;
@@ -84,13 +117,17 @@ body {
 .imgsource-background {
   position: absolute;
   left: 0;
-  bottom: 2rem;
+  bottom: 0;
   height: 1rem;
   width: fit-content;
   background: #737373;
   vertical-align: center;
   padding: 0.5rem;
   border-top-right-radius: 10px;
+}
+
+#welcome-background-src {
+  bottom: 2rem;
 }
 
 .slide {
@@ -180,6 +217,10 @@ img {
 
 #chapter4 {
   background-image: url("https://images.pexels.com/photos/5380637/pexels-photo-5380637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#chapter4_dsb {
+  background-image: url("datenschutzbeauftragter.svg");
 }
 
 #chapter5 {
