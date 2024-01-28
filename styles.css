@@ -97,7 +97,7 @@ body {
 #welcome {
   background-image: url("flag-eu.svg");
   background-position: center;
-  top: 2rem;
+  /*top: 2rem;*/
   background-size: cover;
   display: flex;
   align-content: center;
@@ -204,19 +204,19 @@ img {
 }
 
 #chapter1 {
-  background-image: url("https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("doc_stamp.svg");
 }
 
 #chapter2 {
-  background-image: url("https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("personal_data.svg");
 }
 
 #chapter3 {
-  background-image: url("https://images.pexels.com/photos/5723263/pexels-photo-5723263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("rights.svg");
 }
 
 #chapter4 {
-  background-image: url("https://images.pexels.com/photos/5380637/pexels-photo-5380637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("tasker.svg");
 }
 
 #chapter4_dsb {
@@ -224,9 +224,9 @@ img {
 }
 
 #chapter5 {
-  background-image: url("https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("world.svg");
 }
 
 #chapter8 {
-  background-image: url("https://images.pexels.com/photos/6077189/pexels-photo-6077189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("gavel.svg");
 }
