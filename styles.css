@@ -95,7 +95,7 @@ body {
 }
 
 #welcome {
-  background-image: url("flag-eu.svg");
+  background-image: url("backgrounds/flag-eu.svg");
   background-position: center;
   /*top: 2rem;*/
   background-size: cover;
@@ -227,33 +227,33 @@ body {
 }
 
 #chapter1 {
-  background-image: url("doc_stamp.svg");
+  background-image: url("backgrounds/doc_stamp.svg");
 }
 
 #chapter2 {
-  background-image: url("personal_data.svg");
+  background-image: url("backgrounds/personal_data.svg");
 }
 
 #chapter3 {
-  background-image: url("rights.svg");
+  background-image: url("backgrounds/rights.svg");
 }
 
 #chapter4 {
-  background-image: url("tasker.svg");
+  background-image: url("backgrounds/tasker.svg");
 }
 
 #chapter4_dsb {
-  background-image: url("datenschutzbeauftragter.svg");
+  background-image: url("backgrounds/datenschutzbeauftragter.svg");
 }
 
 #chapter5 {
-  background-image: url("world.svg");
+  background-image: url("backgrounds/world.svg");
 }
 
 #chapter8 {
-  background-image: url("gavel.svg");
+  background-image: url("backgrounds/gavel.svg");
 }
 
 #generalQuestions {
-  background-image: url("questions.svg");
+  background-image: url("backgrounds/questions.svg");
 }
