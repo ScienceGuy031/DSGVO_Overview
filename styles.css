@@ -254,18 +254,21 @@ h3 {
 
 /* Hamburger Menu on small screen */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   label{
     display: block;
     position: fixed;
     z-index: 5;
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .menu {
     background-color: #607D8B;
     position: absolute;
     margin-top: -500%;
-    width: fit-content;
+    width: 100%;
   }
 
   .menu ul {
@@ -274,14 +277,15 @@ h3 {
   }
 
   #btn-menu:checked ~ .menu {
-    margin-top: 8.7vw;
+    margin-top: 13vw;
     transition: all 100ms ease;
     text-align: left;
   }
 
   .menu ul li a {
+    font-size: 2rem;
     width: 100%;
-    padding: 1vw 2vw;
+    padding: 1.5vw 3vw;
   }
 
   .c4 ul {
@@ -291,6 +295,23 @@ h3 {
   .c4 a {
     display: inline-block;
   }
+
+  /* Font-size mobile/small screen */
+
+  .questions h3 {
+    font-size: .8rem;
+  }
+
+  .questions ul {
+    font-size: .7rem;
+    padding-left: 1rem;
+  }
+
+  .title ul {
+    font-size: .7rem;
+    padding-left: .2rem;
+  }
+
 }
 
 /* Responsiveness font-size */
