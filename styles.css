@@ -20,84 +20,71 @@ body {
   overflow-x: hidden;
 }
 
-.navbar {
-  background: #333;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  width: 100vw;
-  z-index: 5;
-}
-
-.pagetitle {
-  font-size: 2rem;
-  font-style: bold;
-  padding: 1rem;
-}
-
-.navlink-container {
-  display: flex;
-}
-
-.navlink {
-  display: block;
-  color: white;
-  font-size: 1.6rem;
-  padding: 1rem;
-}
-
-.navlink:last-of-type {
-  padding-right: 2rem;
-}
-
-.navlink:hover {
-  font-size: 1.7rem;
-  background: black;
-}
-
-.pagetitle:hover {
-  font-size: 2.1rem;
-  background: black;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-.dsb-navdrop {
-  /*display: none;*/
-  position: absolute;
-  z-index: 5;
+header {
   background-color: #333;
-  margin: 0;
-  padding: 0;
-  border-radius: 0 0 15px 15px;
+  width: 100%;
 }
 
-#navlink_dsb {
+#btn-menu {
   display: none;
+}
+
+label {
+  display: none;
+  font-size: 4vw;
+  text-align: center;
   color: white;
-  font-size: 1.6rem;
-  padding: 1rem;
+  background-color: #333;
+  padding: 2vw;
+  transition: all 500ms ease;
 }
 
-#navlink_dsb:hover {
-  background: black;
-  border-radius: 0 0 15px 15px;
+label:hover {
+  background-color: black;
 }
 
-.dropdown:hover #navlink_dsb {
+.menu ul {
+  display: flex;
+  list-style: none;
+  position: fixed;
+  background: #333;
+  z-index: 1;
+  width: 100%;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: ivory;
+  font-size: calc( .25rem + 2vw);
+  padding: 1vw;
+  /*transition: all 500ms ease*/;
+}
+
+.menu ul li a:hover {
+  background-color: black;
+}
+
+.c4 ul {
+  display: none;
+  position: absolute;
+  width: fit-content;
+  transition: all 500ms ease;
+  background-color: #333;
+}
+
+.c4 ul li a{
+  text-align: center;
+}
+
+.c4:hover ul {
   display: block;
 }
 
 #welcome {
   background-image: url("backgrounds/flag-eu.svg");
   background-position: center;
-  /*top: 2rem;*/
+  /*top: 2vw;*/
   background-size: cover;
   display: flex;
   align-content: center;
@@ -108,7 +95,7 @@ body {
 
 #welcome h1 {
   text-align: center;
-  font-size: 8rem;
+  font-size: 9vw;
   font-weight: bold;
   color: gold;
   margin: auto;
@@ -118,12 +105,14 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 1rem;
+  height: 1.5rem;
   width: fit-content;
   background: #737373;
   vertical-align: center;
   padding: 0.5rem;
+  padding-left: 1.5rem;
   border-top-right-radius: 10px;
+  font-size: 1rem;
 }
 
 #welcome-background-src {
@@ -165,15 +154,16 @@ body {
 
 .title h1 {
   color: #333;
-  font-size: 2rem;
+  font-size: 4vw;
 }
 
 .title h1:nth-of-type(2) {
-  padding-top: 2rem;
+  padding-top: 2vw;
 }
 
 .title h2 {
-  padding: 1rem;
+  padding: 1vw;
+  font-size: 3vw;
 }
 
 .questions {
@@ -184,7 +174,7 @@ body {
   border-radius: 5px;
   background: rgba(240, 230, 220, 0.7);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .questions.left {
@@ -196,7 +186,7 @@ body {
 }
 
 .questions details {
-  padding: 1rem;
+  padding: 0.7vw;
   border-top: solid black 1px;
   max-width: 100%;
 }
@@ -206,13 +196,17 @@ body {
 }
 
 .questions ul {
-  padding: 1rem;
-  font-size: 1rem;
+  padding: 1vw;
+  font-size: 1vw;
 }
 
 .questions ul ul {
-  padding: 0.3rem;
-  padding-left: 1rem;
+  padding: 0.3vw;
+  padding-left: 1vw;
+}
+
+h3 {
+  font-size: 2vw;
 }
 
 #chapter1,
@@ -256,4 +250,75 @@ body {
 
 #generalQuestions {
   background-image: url("backgrounds/questions.svg");
+}
+
+/* Hamburger Menu on small screen */
+
+@media only screen and (max-width: 500px) {
+  label{
+    display: block;
+    position: fixed;
+    z-index: 5;
+  }
+
+  .menu {
+    background-color: #607D8B;
+    position: absolute;
+    margin-top: -500%;
+    width: fit-content;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin-top: 8.7vw;
+    transition: all 100ms ease;
+    text-align: left;
+  }
+
+  .menu ul li a {
+    width: 100%;
+    padding: 1vw 2vw;
+  }
+
+  .c4 ul {
+    position: relative;
+  }
+
+  .c4 a {
+    display: inline-block;
+  }
+}
+
+/* Responsiveness font-size */
+
+@media only screen and (min-width: 850px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .questions {
+    font-size: 1rem;
+  }
+
+  .questions ul {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1669px) {
+  #welcome h1 {
+    font-size: 150px;
+  }
 }
