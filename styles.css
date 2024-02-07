@@ -196,6 +196,8 @@ label:hover {
 
 .questions ul {
   padding: 1vw;
+  padding-right: 0;
+  padding-left: 2vw;
   font-size: 1vw;
 }
 
@@ -346,4 +348,34 @@ h3 {
   #welcome h1 {
     font-size: 150px;
   }
+}
+
+/* details styling */
+
+details {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+
+summary::before {
+  content: "";
+  list-style-position: outside;
+  min-width: 1.5rem;
+  min-height: 1rem;
+  background: url("icons/arrow.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: 0.2s;
+  margin-right: 0.5rem;
+}
+
+details[open] summary::before {
+  transform: rotate(180deg);
 }
