@@ -91,6 +91,7 @@ label:hover {
   justify-content: center;
   vertical-align: center;
   height: 100vh;
+  flex-direction: column;
 }
 
 #welcome h1 {
@@ -100,15 +101,19 @@ label:hover {
   margin: auto;
   font-size: calc(25px + 3.9vw);
 }
+#welcome p {
+  color: gold;
+  margin: auto;
+  vertical-align: bottom;
+}
 
 .imgsource-background {
   position: absolute;
-  left: 0;
+  left: 1%;
   bottom: 0;
   height: 1rem;
   width: fit-content;
   background: #737373;
-  vertical-align: center;
   padding: 0.5rem;
   border-top-right-radius: 10px;
   font-size: 1rem;
@@ -374,7 +379,7 @@ details[open] summary::before {
     font-size: 20px;
   }
 
-  li, h3 {
+  li, h3, p {
     font-size: 16px;
   }
 
@@ -399,7 +404,7 @@ details[open] summary::before {
     font-size: 22px;
   }
 
-  li, h3 {
+  li, h3, p {
     font-size: 18px;
   }
 }
@@ -416,7 +421,7 @@ details[open] summary::before {
     font-size: calc(20px + 0.390625vw);
   }
 
-  li, h3 {
+  li, h3, p {
     font-size: calc(15px + 0.390625vw);
   }
 
