@@ -109,7 +109,7 @@ label:hover {
 
 .imgsource-background {
   position: absolute;
-  left: 1%;
+  left: 0;
   bottom: 0;
   height: 1rem;
   width: fit-content;
