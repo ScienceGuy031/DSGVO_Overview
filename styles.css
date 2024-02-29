@@ -147,7 +147,7 @@ label:hover {
   width: 50%;
   padding: 5%;
   border-radius: 5px;
-  background: rgba(240, 230, 220, .7);
+  background: rgba(240, 230, 220, .9);
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
@@ -208,9 +208,11 @@ label:hover {
 #chapter4,
 #chapter4_dsb,
 #chapter5,
-#chapter8 {
-  background-position: center;
+#chapter8,
+#generalQuestions {
+  background-position: top fixed;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #chapter1 {
