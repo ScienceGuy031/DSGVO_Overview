@@ -5,8 +5,6 @@ function highlightNav() {
     .find(e => e.getBoundingClientRect().top >= 0)
 
   if (currentRegion) {
-    window.location.hash = `#${currentRegion.id}`;
-
     [...document.querySelectorAll(`a:not([href='#${currentRegion.id}'])`)]
       .forEach(a => a.classList.remove('active'))
 
