@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="styles.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ca7b1b4fb0.js" crossorigin="anonymous"></script>
 </head>
 <header>
   <input type="checkbox" id="btn-menu">
@@ -12,6 +13,7 @@
   <nav class="menu">
     <ul>
       <li><a class="navLink" href="#welcome">DSGVO</a></li>
+      <li><a class="navlink" href="#searchsection"><i class="fa-solid fa-magnifying-glass"></i></a></li>
       <li><a class="navLink" href="#chapter1">Kapitel 1</a></li>
       <li><a class="navLink" href="#chapter2">Kapitel 2</a></li>
       <li><a class="navLink" href="#chapter3">Kapitel 3</a></li>
@@ -37,6 +39,33 @@
       <a target="_blank"
         href="https://www.freepik.com/free-vector/illustration-european-union-flag_2922296.htm#query=Europe&position=8&from_view=search&track=sph&uuid=7ac46310-532f-4c24-87b4-8f99aeb148b1">Image
         by rawpixel.com</a> on Freepik
+    </div>
+  </section>
+
+  <section class="slide" id="searchsection">
+    <div class="chapterHeader">
+      <h1>Experimentelle Suchfunktion</h1>
+    </div>
+    <div class="searchbar">
+      <input
+        type="search"
+        id="searchbar"
+        placeholder="&#x1F50D; Wonach suchen Sie?"
+        list="searchsuggestions"
+      />
+      <datalist id="searchsuggestions">
+        <option value="Datenschutzbeauftragter"></option>
+        <option value="Recht auf Löschung"></option>
+        <option value="Widerspruchsrecht"></option>
+        <option value="Auftragsverarbeiter"></option>
+        <option value="Schadenersatz"></option>
+      </datalist>
+    </div>
+    <div class="searchresults" id="searchresults">
+      
+    </div>
+    <div class="imgsource-background">
+      <a target="_blank" href="https://de.freepik.com/vektoren-kostenlos/leutesuchkonzeptillustration_6203413.htm#fromView=search&page=1&position=8&uuid=a0ba0426-008e-4cdc-a1a4-fe1b7dc21176">Bild von storyset auf Freepik</a>
     </div>
   </section>
 
@@ -1641,6 +1670,7 @@
   <script src="js/sectionHeight.js"></script>
   <script src="js/questionsBelowChapter.js"></script>
   <script src="js/navLinkHighlight.js"></script>
+  <script src="js/search.js"></script>
 
 </body>
 

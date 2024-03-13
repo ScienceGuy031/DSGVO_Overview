@@ -163,12 +163,12 @@ p#authors {
   transform-style: inherit;
 }
 
-.slide:nth-child(2n) .title {
+.slide:nth-child(2n+1) .title {
   margin-left: 0;
   margin-right: auto;
 }
 
-.slide:nth-child(2n+1) .title {
+.slide:nth-child(2n) .title {
   margin-left: auto;
   margin-right: 0;
 }
@@ -244,7 +244,8 @@ p#authors {
 #chapter4_dsb,
 #chapter5,
 #chapter8,
-#generalQuestions {
+#generalQuestions,
+#searchsection {
   background-position: top fixed;
   background-size: cover;
   background-attachment: fixed;
@@ -280,6 +281,10 @@ p#authors {
 
 #generalQuestions {
   background-image: url("backgrounds/questions.svg");
+}
+
+#searchsection {
+  background-image: url("backgrounds/search.svg");
 }
 
 /* Hamburger Menu below 600px? */
@@ -455,4 +460,48 @@ details[open] summary::before {
     font-size: calc(15px + 0.390625vw);
   }
 
+}
+
+/* Search */
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.searchbar input {
+  width: 50%;
+  min-width: 300px;
+  border-radius: 24px;
+  font-size: calc(20px + 0.390625vw);
+  border: 0px;
+  outline: auto;
+  background-color: rgba(240, 230, 220, .9)
+}
+
+.searchresults {
+  position: absolute;
+  width: 80%;
+  padding-top: 2%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*display: none;*/
+}
+
+.searchresult {
+  width: 100%;
+  padding: 1%;
+}
+
+.searchresult h1,
+.searchresult p {
+  color: #333;
+}
+
+.searchbar [list]::-webkit-list-button,
+.searchbar [list]::-webkit-calendar-picker-indicator {
+  display: none !important;
 }

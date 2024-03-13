@@ -2,7 +2,7 @@ window.addEventListener('scroll', highlightNav);
 
 function highlightNav() {
   const currentRegion = [...document.querySelectorAll("section:not([id=''])")]
-    .find(e => e.getBoundingClientRect().top >= 0)
+    .find(e => e.getBoundingClientRect().bottom >= 0)
 
   if (currentRegion) {
     [...document.querySelectorAll(`a:not([href='#${currentRegion.id}'])`)]
