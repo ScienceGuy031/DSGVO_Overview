@@ -494,6 +494,7 @@ details[open] summary::before {
 .searchresult {
   width: 100%;
   padding: 1%;
+  margin-top: 1vh;
 }
 
 .searchresult h1,

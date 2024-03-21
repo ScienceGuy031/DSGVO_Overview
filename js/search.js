@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var vh = window.innerHeight * 0.01;
 
     Array.from(searchResults).forEach((result) => {
-      contentHeight += result.clientHeight;
+      contentHeight += result.clientHeight + 1 * vh;
     });
 
     if (searchSection.clientHeight > 100 * vh) {
